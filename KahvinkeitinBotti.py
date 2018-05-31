@@ -29,7 +29,7 @@ while True:
     startPin = GPIO.input(18)
     increasePin = GPIO.input(23)
     
-    if startPin== False:
+    if startPin == False:
         if amountOfCoffee == 1:
             bot.sendMessage(494911182, "Kahvinkeitin käynnistetty: Kahvia keitetään " + str(amountOfCoffee) + " kupillinen. " + str(datetime.datetime.now()))
             time.sleep(timeToSleep * amountOfCoffee)
